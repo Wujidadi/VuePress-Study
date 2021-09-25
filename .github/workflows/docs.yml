@@ -1,0 +1,60 @@
+name: docs
+
+on:
+  # 每當 push 到 main 分支時觸發部署
+  push:
+    branches:
+      - main
+  # 手動觸發部署
+  workflow_dispatch:
+
+jobs:
+  docs:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          # 「最近更新時間」等 git 日誌相關資訊須 pull 全部提交記錄
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          # 选择要使用的 node 版本
+          node-version: '16'
+
+      # 快取 node_modules
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      # 如果快取未命中才安裝依賴的模組
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn --frozen-lockfile
+
+      # 運行建構指令
+      - name: Build VuePress site
+        run: yarn docs:build
+
+      # 查看 workflow 文件以獲得更多資訊
+      # @see https://github.com/crazy-max/ghaction-github-pages
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          # 部署到 publish 分支（預設值為 gh-pages）
+          target_branch: publish
+          # 部署目錄為 VuePress 的預設輸出資料夾
+          build_dir: docs/.vuepress/dist
+        env:
+          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+          GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}

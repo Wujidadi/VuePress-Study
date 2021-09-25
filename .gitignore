@@ -1,0 +1,30 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# Node.js
+node_modules/
+.temp/
+.cache/
+
+# Composer
+vendor/
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Microsoft Visual Studio Code
+.vscode/
+
+# Microsoft Office
+~$*

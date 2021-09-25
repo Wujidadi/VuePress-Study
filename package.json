@@ -1,0 +1,16 @@
+{
+    "name": "vue_press_study",
+    "version": "0.1.0",
+    "description": "VuePress study project",
+    "main": "index.js",
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    },
+    "author": "Wujidadi",
+    "license": "MIT",
+    "devDependencies": {
+        "vuepress": "^2.0.0-beta.26",
+        "@vuepress/plugin-search": "^2.0.0-beta.26"
+    }
+}
