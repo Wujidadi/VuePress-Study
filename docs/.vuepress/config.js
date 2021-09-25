@@ -16,44 +16,10 @@ module.exports = {
         docsDir: 'docs',
 
         /* 各頁面一致的側邊欄 */
-        sidebar: sidebars.unifiedSidebar
+        sidebar: sidebars.integrated
 
         /* 各頁面不同的側邊欄 */
-        // sidebar: {
-        //     '/index.html': [
-        //         {
-        //             text: 'VuePress Study',
-        //             link: '/index.html'
-        //         },
-        //         {
-        //             text: 'Other',
-        //             children: [
-        //                 {
-        //                     text: 'TshiekSieg',
-        //                     link: 'tshieksieg.html'
-        //                 }
-        //             ]
-        //         },
-        //         {
-        //             text: 'VuePress 2 Official Site',
-        //             link: 'https://v2.vuepress.vuejs.org/zh/'
-        //         }
-        //     ],
-        //     '/tshieksieg.html': [
-        //         {
-        //             text: 'TshiekSieg',
-        //             link: 'tshieksieg.html'
-        //         },
-        //         {
-        //             text: 'VuePress Study',
-        //             link: '/index.html'
-        //         },
-        //         {
-        //             text: 'VuePress 2 Official Site',
-        //             link: 'https://v2.vuepress.vuejs.org/zh/'
-        //         }
-        //     ]
-        // }
+        // sidebar: sidebars.divided
     },
     markdown: {
         anchor: {
