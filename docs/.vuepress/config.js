@@ -11,6 +11,7 @@ module.exports = {
         darkMode: true,
         repo: 'Wujidadi/VuePress-Study',
         repoLabel: 'GitHub Repo',
+        docsDir: 'docs',
 
         /* 各頁面一致的側邊欄 */
         sidebar: [
