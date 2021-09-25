@@ -3,6 +3,7 @@ head:
   - - link
     - rel: shortcut icon
       href: https://vuejs.org/images/logo.png
+permalink: /index.html
 # sidebar:
 #   - text: VuePress Study
 #     link: /
@@ -23,7 +24,7 @@ This is a demo page of my VuePress study project.
 
 ## Code Block
 
-### JavaScript
+### JavaScript <Badge text="中文" vertical="middle" />
 
 ```js{2,5-7,10}:line-numbers
 const vueApp = Vue.createApp({
