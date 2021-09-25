@@ -13,7 +13,7 @@ head:
 #   - text: VuePress 2 Official Site
 #     link: https://v2.vuepress.vuejs.org/zh/
 ---
-# Hello VuePress
+# Hello VuePress | VuePress Study
 
 This is a demo page of my VuePress study project.
 
@@ -58,7 +58,7 @@ the rest of the active core team members.
 ```
 
 
-## Table <Badge text="Chinese" vertical="middle" />
+## Table <Badge text="中文" vertical="middle" />
 
 | No. | Name   | Comments   |
 |:---:| ------ | ---------- |
@@ -72,7 +72,7 @@ the rest of the active core team members.
 VuePress 2 已經發布 :tada: ！
 
 
-## Custom Containers <Badge text="Chinese" type="warning" vertical="middle" />
+## Custom Containers <Badge text="中文" type="warning" vertical="middle" />
 
 ::: tip
 這是一個提示
