@@ -1,3 +1,5 @@
+const sidebars = require('./sidebar.js');
+
 module.exports = {
     lang: 'zh-TW',
     title: 'VuePress Study',
@@ -14,25 +16,7 @@ module.exports = {
         docsDir: 'docs',
 
         /* 各頁面一致的側邊欄 */
-        sidebar: [
-            {
-                text: 'VuePress Study',
-                link: '/index.html'
-            },
-            {
-                text: 'Other',
-                children: [
-                    {
-                        text: 'TshiekSieg',
-                        link: 'tshieksieg.html'
-                    }
-                ]
-            },
-            {
-                text: 'VuePress 2 Official Site',
-                link: 'https://v2.vuepress.vuejs.org/zh/'
-            }
-        ]
+        sidebar: sidebars.unifiedSidebar
 
         /* 各頁面不同的側邊欄 */
         // sidebar: {
