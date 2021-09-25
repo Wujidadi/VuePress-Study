@@ -16,7 +16,7 @@ module.exports = {
         sidebar: [
             {
                 text: 'VuePress Study',
-                link: '/'
+                link: '/index.html'
             },
             {
                 text: 'Other',
@@ -35,10 +35,10 @@ module.exports = {
 
         /* 各頁面不同的側邊欄 */
         // sidebar: {
-        //     '/': [
+        //     '/index.html': [
         //         {
         //             text: 'VuePress Study',
-        //             link: '/'
+        //             link: '/index.html'
         //         },
         //         {
         //             text: 'Other',
@@ -61,7 +61,7 @@ module.exports = {
         //         },
         //         {
         //             text: 'VuePress Study',
-        //             link: '/'
+        //             link: '/index.html'
         //         },
         //         {
         //             text: 'VuePress 2 Official Site',
