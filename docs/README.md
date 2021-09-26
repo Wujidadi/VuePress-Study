@@ -14,7 +14,7 @@ permalink: /index.html
 #   - text: VuePress 2 Official Site
 #     link: https://v2.vuepress.vuejs.org/zh/
 ---
-# Hello VuePress | VuePress Study
+# Hello VuePress
 
 This is a demo page of my VuePress study project.
 
