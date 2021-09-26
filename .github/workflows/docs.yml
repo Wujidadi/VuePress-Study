@@ -55,6 +55,8 @@ jobs:
           target_branch: publish
           # 部署目錄為 VuePress 的預設輸出資料夾
           build_dir: docs/.vuepress/dist
+          # 設定 CNAME
+          fqdn: vuepress-study.wujidadi.com
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
