@@ -6,7 +6,7 @@ module.exports = {
     description: 'A VuePress study project',
     host: 'localhost',
     port: 18080,
-    base: '/VuePress-Study/',
+    // base: '/VuePress-Study/',
     themeConfig: {
         logo: 'https://vuejs.org/images/logo.png',
         logoDark: 'https://vuejs.org/images/logo.png',
